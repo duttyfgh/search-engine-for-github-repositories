@@ -1,7 +1,7 @@
 import { ChangeEvent, useState, useEffect } from 'react'
 import RepoCard from '../components/RepoCard'
 import { useDebounse } from '../hooks/debounced'
-import { IUser, IRepo } from '../modules'
+import { IUser } from '../modules'
 import { useLazyGetUserReposQuery, useSearchUsersQuery } from '../store/github/github.api'
 
 const HomePage = () => {
