@@ -9,7 +9,7 @@ const App = () => {
       <Header />
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/search-engine-for-github-repositories" element={<HomePage />} />
         <Route path="/favourites" element={<FavouritePage />} />
       </Routes>
 
