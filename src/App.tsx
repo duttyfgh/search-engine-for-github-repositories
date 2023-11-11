@@ -10,7 +10,7 @@ const App = () => {
 
       <Routes>
         <Route path="/search-engine-for-github-repositories/" element={<HomePage />} />
-        <Route path="/search-engine-for-github-repositories/favourites" element={<FavouritePage />} />
+        <Route path="/favourites" element={<FavouritePage />} />
       </Routes>
 
     </div>
