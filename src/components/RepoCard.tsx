@@ -8,16 +8,16 @@ import useAppSelector from "../hooks/redux"
 const RepoCard = ({ repo }: { repo: IRepo }) => {
     const { addToFavorites, removeFromFavorites } = useActions()
     const { favourites } = useAppSelector(state => state.github)
-    const [isFav, setIsFav] = useState(favourites.includes(repo.html_url))
+    const [isFav, setIsFav] = useState(favourites.includes(repo))
     
     const addToFavourite = () => {
         setIsFav(true)
-        addToFavorites(repo.html_url)
+        addToFavorites(repo)
     }
 
     const removeToFavourite = () => {
         setIsFav(false)
-        removeFromFavorites(repo.html_url)
+        removeFromFavorites(repo)
 
     }
 

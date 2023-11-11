@@ -9,13 +9,13 @@ const Header = () => {
                 <NavLink className={navData => navData.isActive
                     ? 'hover:text-slate-300 transition-all text-[#abb0bf]'
                     : 'hover:text-slate-300 transition-all'
-                } to='/search-engine-for-github-repositories'>Home</NavLink>
+                } to='/search-engine-for-github-repositories/'>Home</NavLink>
 
                 <NavLink className={
                     navData => navData.isActive
                         ? 'hover:text-slate-300 transition-all text-[#abb0bf]'
                         : 'hover:text-slate-300 transition-all'
-                } to='/favourites'>Favourite</NavLink>
+                } to='search-engine-for-github-repositories/favourites'>Favourite</NavLink>
             </div>
         </header>
     )

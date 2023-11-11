@@ -40,7 +40,7 @@ const HomePage = () => {
                 {isError && <span className='text-red-500'>Something went wrong...</span>}
                 {isLoading && <span>Users are loaning...</span>}
 
-                {dropdown && <ul className='list-none shadow-md'>
+                {dropdown && <ul className='list-none shadow-md overflow-y-scroll max-h-[500px] pb-[15px]'>
                     {data?.map((user: IUser) => (
                         <li
                             key={user.id}
@@ -56,7 +56,7 @@ const HomePage = () => {
                 </ul>}
 
                 {areReposLoading && <span>Repos are loaning...</span>}
-                <div className=' max-h-[500px] overflow-hidden overflow-y-scroll'>
+                <div className='max-h-[500px] overflow-y-scroll'>
                     {repos?.map(repo => <RepoCard repo={repo} />)}
                 </div>
 
