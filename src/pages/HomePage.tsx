@@ -30,9 +30,9 @@ const HomePage = () => {
     return (
         <div className="flex justify-center pt-10 mx-auto h-screen w-screen">
 
-            <div className="relative w-[560px]">
+            <div className="relative w-[560px] m-[10px]">
                 <input type="text"
-                    className="border py-2 px-4 w-full h-[50px] mb-2 text-lg mx-[20px]"
+                    className="border py-2 px-4 w-full h-[50px] mb-2 text-lg outline-none focus:border-blue-900 rounded"
                     placeholder="Search for Github username..."
                     onChange={searchHandler}
                     value={search}
@@ -56,7 +56,7 @@ const HomePage = () => {
                 </ul>}
 
                 {areReposLoading && <span>Repos are loaning...</span>}
-                <div className=' max-h-[500px] overflow-hidden overflow-y-scroll '>
+                <div className=' max-h-[500px] overflow-hidden overflow-y-scroll'>
                     {repos?.map(repo => <RepoCard repo={repo} />)}
                 </div>
 

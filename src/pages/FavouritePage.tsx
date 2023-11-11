@@ -14,9 +14,9 @@ const FavouritePage = () => {
     if (favourites.length === 0) return <p className="text-center p-4 text-lg">No items.</p>
     return (
         <div className="flex justify-center pt-10 mx-auto h-screen w-screen ">
-            <ul className="list-none max-h-[600px] min-w-[450px] overflow-y-scroll">
+            <ul className="list-none max-h-[600px] mx-[10px]  overflow-y-scroll">
                 {favourites.map(f => (
-                    <li key={f} className="border py-4 px-4 mb-2 hover:bg-slate-100 flex items-center justify-between  ">
+                    <li key={f} className="border w-[100%] overflow-hidden py-4 px-4 mb-2 hover:bg-slate-100 flex flex-wrap items-center justify-between  ">
                         <a href={f} target={'_blank'} >{f}</a>
                         <img
                             className="max-w-[50px] max-h-[50px] hover:cursor-pointer"
