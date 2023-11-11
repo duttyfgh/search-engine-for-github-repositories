@@ -6,7 +6,7 @@ const Header = () => {
             <h3 className="font-bold">Github search</h3>
 
             <div>
-                <Link className='mr-3 hover:text-slate-300 transition-all' to='/'>Home</Link>
+                <Link className='mr-3 hover:text-slate-300 transition-all' to='/search-engine-for-github-repositories'>Home</Link>
                 <Link className='hover:text-slate-300 transition-all' to='/favourites'>Favourite</Link>
             </div>
         </header>

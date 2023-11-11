@@ -32,7 +32,7 @@ const HomePage = () => {
 
             <div className="relative w-[560px]">
                 <input type="text"
-                    className="border py-2 px-4 w-full h-[50px] mb-2 text-lg"
+                    className="border py-2 px-4 w-full h-[50px] mb-2 text-lg mx-[20px]"
                     placeholder="Search for Github username..."
                     onChange={searchHandler}
                     value={search}
